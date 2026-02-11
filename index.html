@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECF-MEDIA | Agenzia Digitale Completa - Social, Video, Grafica, Copywriting, Siti Web, Chat Bot</title>
+<meta name="description" content="ECF-MEDIA: agenzia digitale completa per PMI. Servizi integrati: social media, video production, grafica, copywriting, siti web e chat bot. Trasformiamo la tua presenza digitale in clienti reali.">
+<meta name="keywords" content="agenzia digitale, social media, video production, grafica, copywriting, siti web, chat bot, marketing digitale, PMI">
+<meta property="og:title" content="ECF-MEDIA | Agenzia Digitale Completa">
+<meta property="og:description" content="Trasformiamo la tua presenza digitale in clienti reali. Servizi integrati per piccole e medie imprese.">
+<meta property="og:type" content="website">
+
+<!-- Favicon -->
+<!-- Favicon files will be added when available -->
+<!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+<!-- <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"> -->
+<!-- <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
+<!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"> -->
+
+<!-- Schema.org markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ECF-MEDIA",
+  "description": "Agenzia digitale completa per piccole e medie imprese. Servizi integrati: social media, video production, grafica, copywriting, siti web e chat bot.",
+  "url": "https://www.ecf-media.it",
+  "telephone": "+39 366 440 0722",
+  "email": "info@ecfmedia.it",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IT"
+  },
+  "priceRange": "€€",
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "sameAs": [
+    "https://www.instagram.com/ecfmedia",
+    "https://www.facebook.com/ecfmedia",
+    "https://www.linkedin.com/company/ecfmedia"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servizi Digitali",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Social Media Management"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Video Production"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Grafica Professionale"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Copywriting"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Siti Web"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Chat Bot"
+        }
+      }
+    ]
+  }
+}
+</script>
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ========================================
+   VARIABILI — MODIFICA QUI PER PERSONALIZZARE
+   ======================================== */
+:root {
+  /* Colori principali */
+  --primary: #4a4a4a;        /* Grigio scuro per testo */
+  --accent: #00BFFF;         /* Azzurro brillante per elementi importanti */
+  --accent-hover: #0099CC;
+  --light: #ffffff;          /* Bianco — colore principale (60%) */
+  --warm: #f5f5f5;           /* Grigio chiaro — colore secondario (30%) */
+  --text: #333333;           /* Grigio scuro */
+  --text-muted: #666666;     /* Grigio medio */
+  --white: #ffffff;
+
+  /* Font */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+
+  /* Spacing */
+  --section-padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 5vw, 3rem);
+  --max-width: 1140px;
+  --radius: 12px;
+}
+
+/* ========================================
+   RESET & BASE
+   ======================================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ========================================
+   TIPOGRAFIA
+   ======================================== */
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.2; color: var(--text); }
+
+h1 { font-size: clamp(2.2rem, 5.5vw, 3.8rem); letter-spacing: -0.02em; }
+h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); letter-spacing: -0.01em; }
+h3 { font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
+
+p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
+
+.label {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  display: block;
+  text-shadow: 0 0 10px rgba(0,191,255,0.4);
+}
+
+/* ========================================
+   CTA BUTTON — UNA SOLA AZIONE, RIPETUTA
+   ======================================== */
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2.25rem;
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 191, 255, 0.4), 0 0 30px rgba(0, 191, 255, 0.3);
+}
+
+.cta:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 40px rgba(0, 191, 255, 0.5), 0 0 50px rgba(0, 191, 255, 0.4);
+}
+
+.cta svg { width: 18px; height: 18px; transition: transform 0.3s; }
+.cta:hover svg { transform: translateX(3px); }
+
+.cta--outline {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  box-shadow: none;
+}
+.cta--outline:hover { background: var(--accent); color: var(--white); }
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1rem 1.5rem;
+  transition: all 0.4s;
+  background: transparent;
+}
+
+.nav.scrolled {
+  background: rgba(255,255,255,0.98);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 20px rgba(0,0,0,0.08);
+  padding: 0.75rem 1.5rem;
+}
+
+.nav__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav__links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color 0.3s;
+}
+
+.nav__links a:hover { color: var(--accent); }
+
+.nav__cta {
+  font-size: 0.85rem !important;
+  padding: 0.65rem 1.5rem !important;
+  color: var(--white) !important;
+}
+
+/* Mobile nav */
+.nav__toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav__toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav__toggle { display: block; }
+  .nav__links {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--white);
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  .nav__links.open { opacity: 1; pointer-events: all; }
+  .nav__links a { font-size: 1.25rem; }
+}
+
+/* ========================================
+   1. HERO
+   ======================================== */
+.hero {
+  padding: clamp(7rem, 14vw, 10rem) clamp(1.25rem, 5vw, 3rem) var(--section-padding);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -15%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0,191,255,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero__content { position: relative; z-index: 1; }
+
+.hero h1 { margin-bottom: 1.25rem; }
+.hero h1 em {
+  font-style: normal;
+  color: var(--accent);
+  position: relative;
+  text-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+}
+
+.hero__sub {
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+.hero__proof {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero__avatars {
+  display: flex;
+}
+
+.hero__avatars span {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  margin-left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--white);
+}
+.hero__avatars span:first-child { margin-left: 0; }
+.hero__avatars span:nth-child(1) { background: #6366f1; }
+.hero__avatars span:nth-child(2) { background: #f59e0b; }
+.hero__avatars span:nth-child(3) { background: #10b981; }
+.hero__avatars span:nth-child(4) { background: var(--accent); box-shadow: 0 0 15px rgba(0,191,255,0.5); }
+
+.hero__proof-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.hero__proof-text strong { color: var(--text); }
+
+.hero__image {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__image-placeholder {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  padding: 2rem;
+}
+
+.hero__image-placeholder svg { width: 48px; height: 48px; margin-bottom: 0.75rem; opacity: 0.4; }
+
+/* Floating badge */
+.hero__badge {
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
+  background: var(--white);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hero__badge-icon {
+  width: 42px;
+  height: 42px;
+  background: #ecfdf5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.hero__badge-text { font-size: 0.8rem; }
+.hero__badge-text strong { display: block; font-size: 1rem; color: var(--text); }
+
+@media (max-width: 768px) {
+  /* Hero */
+  .hero .container { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero__image { max-width: 100%; margin: 0 auto; }
+  .hero__badge {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 1.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .hero__proof {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  /* Problem & Solution */
+  .problem__list {
+    max-width: 100%;
+  }
+  .problem__list li {
+    font-size: 0.95rem;
+  }
+  .solution .container { grid-template-columns: 1fr; gap: 2.5rem; }
+  .solution__visual {
+    padding: 2rem;
+  }
+  
+  /* Features */
+  .features__grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .features__card {
+    padding: 1.5rem;
+  }
+  
+  /* Portfolio */
+  .portfolio__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .portfolio__results {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  /* Proof */
+  .proof__grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .proof__card {
+    padding: 1.5rem;
+  }
+  
+  /* Process */
+  .process__steps { grid-template-columns: 1fr; gap: 2.5rem; }
+  .process__steps::before { display: none; }
+  .process__number { width: 60px; height: 60px; font-size: 1.3rem; }
+  
+  /* Pricing */
+  .pricing__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .pricing__box {
+    padding: 2rem;
+  }
+  
+  /* Contact Form */
+  .contact-form__form {
+    padding: 0;
+  }
+  .contact-form__field {
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Footer */
+  .footer__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  .footer__social {
+    justify-content: center;
+  }
+  
+  /* Typography adjustments */
+  h1 { font-size: clamp(1.8rem, 6vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 5vw, 2rem); }
+  h3 { font-size: clamp(1.1rem, 3vw, 1.3rem); }
+  
+  /* CTA buttons */
+  .cta {
+    padding: 0.875rem 1.75rem;
+    font-size: 0.95rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Section padding */
+  :root {
+    --section-padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem);
+  }
+  
+  /* Container max-width */
+  .container {
+    padding: 0 1rem;
+  }
+  
+  /* Labels */
+  .label {
+    font-size: 0.75rem;
+  }
+  
+  /* Portfolio stats */
+  .portfolio__stat strong {
+    font-size: 1.25rem;
+  }
+  
+  /* Solution stat */
+  .solution__stat-number {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+  }
+}
+
+/* ========================================
+   2. PROBLEMA
+   ======================================== */
+.problem {
+  padding: var(--section-padding);
+  background: var(--warm);
+}
+
+.problem .container { max-width: 800px; text-align: center; }
+
+.problem h2 { margin-bottom: 1.5rem; }
+
+.problem__list {
+  list-style: none;
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 1rem;
+  text-align: left;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.problem__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1.05rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.problem__list li::before {
+  content: '✕';
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6f7ff;
+  color: var(--accent);
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 2px;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+}
+
+/* ========================================
+   3. SOLUZIONE
+   ======================================== */
+.solution {
+  padding: var(--section-padding);
+}
+
+.solution .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.solution h2 { margin-bottom: 1rem; }
+
+.solution__checks {
+  list-style: none;
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.solution__checks li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.solution__checks li::before {
+  content: '✓';
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6f7ff;
+  color: var(--accent);
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,191,255,0.3);
+}
+
+.solution__visual {
+  background: linear-gradient(135deg, #666666 0%, #4a4a4a 100%);
+  border-radius: var(--radius);
+  padding: 3rem;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.solution__visual::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0,191,255,0.2) 0%, transparent 60%);
+}
+
+.solution__stat {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.solution__stat-number {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: var(--accent);
+  display: block;
+  text-shadow: 0 0 30px rgba(0, 191, 255, 0.6);
+}
+
+.solution__stat-label {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+
+/* ========================================
+   PORTFOLIO / CASI STUDIO
+   ======================================== */
+.portfolio {
+  padding: var(--section-padding);
+  background: var(--white);
+}
+
+.portfolio .container { text-align: center; }
+.portfolio h2 { margin-bottom: 1rem; }
+.portfolio > .container > p { max-width: 600px; margin: 0 auto 3rem; }
+
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  text-align: left;
+}
+
+.portfolio__card {
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: all 0.3s;
+  color: inherit;
+  cursor: pointer;
+}
+
+.portfolio__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  border-color: var(--accent);
+}
+
+.portfolio__image {
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+}
+
+.portfolio__content {
+  padding: 1.5rem;
+}
+
+.portfolio__content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.portfolio__service {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px rgba(0,191,255,0.3);
+}
+
+.portfolio__results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.portfolio__stat {
+  text-align: center;
+}
+
+.portfolio__stat strong {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--accent);
+  font-weight: 700;
+  text-shadow: 0 0 15px rgba(0,191,255,0.4);
+  margin-bottom: 0.25rem;
+}
+
+.portfolio__stat span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: block;
+}
+
+/* ========================================
+   4. SOCIAL PROOF
+   ======================================== */
+.proof {
+  padding: var(--section-padding);
+  background: var(--warm);
+}
+
+.proof .container { text-align: center; }
+.proof h2 { margin-bottom: 3rem; }
+
+.proof__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.proof__card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.proof__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+}
+
+.proof__stars {
+  color: #f59e0b;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.proof__quote {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  font-style: italic;
+}
+
+.proof__author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.proof__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.proof__name { font-size: 0.85rem; font-weight: 600; color: var(--text); }
+.proof__role { font-size: 0.8rem; color: var(--text-muted); }
+
+/* ========================================
+   5. SERVIZI / FEATURES
+   ======================================== */
+.features {
+  padding: var(--section-padding);
+}
+
+.features .container { text-align: center; }
+.features h2 { margin-bottom: 1rem; }
+.features > .container > p { max-width: 600px; margin: 0 auto 3rem; }
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.features__card {
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: all 0.3s;
+  background: var(--white);
+}
+
+.features__card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 30px rgba(0,191,255,0.15), 0 0 20px rgba(0,191,255,0.1);
+}
+
+.features__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.features__card h3 { margin-bottom: 0.5rem; font-size: 1.15rem; }
+.features__card p { font-size: 0.95rem; }
+
+/* ========================================
+   6. PROCESSO — "COME FUNZIONA"
+   ======================================== */
+.process {
+  padding: var(--section-padding);
+  background: #4a4a4a;
+  color: var(--white);
+}
+
+.process .container { text-align: center; }
+.process .label { color: rgba(0,191,255,0.9); text-shadow: 0 0 15px rgba(0,191,255,0.5); }
+.process h2 { color: var(--white); margin-bottom: 3rem; }
+
+.process__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+/* Connecting line */
+.process__steps::before {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: 15%;
+  right: 15%;
+  height: 2px;
+  background: rgba(255,255,255,0.1);
+  z-index: 0;
+}
+
+.process__step { position: relative; z-index: 1; }
+.process__step .process__number { z-index: 2; }
+
+.process__number {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #4a4a4a;
+  border: 2px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  box-shadow: 0 0 25px rgba(0,191,255,0.4), inset 0 0 15px rgba(0,191,255,0.2);
+  position: relative;
+  z-index: 2;
+}
+
+.process__step h3 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.process__step p {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   FORM CONTATTO
+   ======================================== */
+.contact-form {
+  padding: var(--section-padding);
+  background: var(--warm);
+}
+
+.contact-form .container {
+  text-align: center;
+  max-width: 800px;
+}
+
+.contact-form h2 { margin-bottom: 1rem; }
+.contact-form > .container > p { margin-bottom: 2rem; }
+
+.contact-form__form {
+  text-align: left;
+}
+
+.contact-form__field {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form__field label {
+  display: block;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.contact-form__field input,
+.contact-form__field select,
+.contact-form__field textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: all 0.3s;
+  background: var(--white);
+}
+
+.contact-form__field input:focus,
+.contact-form__field select:focus,
+.contact-form__field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0,191,255,0.1);
+}
+
+.contact-form__field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form__field input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+/* ========================================
+   7. PRICING / CTA
+   ======================================== */
+.pricing {
+  padding: var(--section-padding);
+}
+
+.pricing .container {
+  text-align: center;
+  max-width: 1200px;
+}
+
+.pricing h2 { margin-bottom: 1rem; }
+.pricing > .container > p { max-width: 700px; margin: 0 auto 3rem; }
+
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.pricing__box {
+  background: var(--white);
+  border: 2px solid rgba(0,0,0,0.08);
+  border-radius: calc(var(--radius) * 1.5);
+  padding: 2.5rem;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.pricing__box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+}
+
+.pricing__box.featured {
+  border-color: var(--accent);
+  border-width: 3px;
+}
+
+.pricing__box.featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), #0099CC);
+  box-shadow: 0 0 20px rgba(0,191,255,0.5);
+}
+
+.pricing__popular {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 20px rgba(0,191,255,0.5);
+}
+
+.pricing__name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.pricing__price {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.pricing__period {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.pricing__includes {
+  list-style: none;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.pricing__includes li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.pricing__includes li::before {
+  content: '✓';
+  color: var(--accent);
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(0,191,255,0.4);
+  flex-shrink: 0;
+}
+
+/* ========================================
+   8. FAQ
+   ======================================== */
+.faq {
+  padding: var(--section-padding);
+  background: var(--warm);
+}
+
+.faq .container { max-width: 750px; }
+.faq h2 { text-align: center; margin-bottom: 2.5rem; }
+
+.faq__item {
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.faq__question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1.25rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: left;
+}
+
+.faq__question::after {
+  content: '+';
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--accent);
+  transition: transform 0.3s;
+  flex-shrink: 0;
+  margin-left: 1rem;
+  text-shadow: 0 0 10px rgba(0,191,255,0.5);
+}
+
+.faq__item.active .faq__question::after {
+  transform: rotate(45deg);
+}
+
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s;
+}
+
+.faq__item.active .faq__answer {
+  max-height: 300px;
+  padding-bottom: 1.25rem;
+}
+
+.faq__answer p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ========================================
+   9. FOOTER CTA
+   ======================================== */
+.final-cta {
+  padding: var(--section-padding);
+  background: #4a4a4a;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0,191,255,0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.final-cta .container { position: relative; z-index: 1; max-width: 650px; }
+
+.final-cta h2 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.final-cta p {
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.footer {
+  background: #4a4a4a;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 3rem clamp(1.25rem, 5vw, 3rem);
+}
+
+.footer__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer__section h4 {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+}
+
+.footer__links {
+  list-style: none;
+}
+
+.footer__links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer__links a {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footer__links a:hover {
+  color: var(--accent);
+}
+
+.footer__contact {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.footer__contact a {
+  color: rgba(255,255,255,0.6);
+  transition: color 0.3s;
+}
+
+.footer__contact a:hover {
+  color: var(--accent);
+}
+
+.footer__social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer__social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.6);
+  transition: all 0.3s;
+  font-size: 1.1rem;
+}
+
+.footer__social a:hover {
+  background: var(--accent);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,191,255,0.3);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer__bottom p {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.35);
+}
+
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.stagger > * { transition-delay: calc(var(--i, 0) * 0.1s); }
+</style>
+</head>
+
+<body>
+
+<!-- ======================== NAVBAR ======================== -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#" class="nav__logo">ECF-MEDIA</a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#servizi">Servizi</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#processo">Come Funziona</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contatto" class="cta nav__cta">Prenota Gratis</a></li>
+    </ul>
+    <button class="nav__toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ======================== 1. HERO ======================== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__content fade-up">
+      <span class="label">Agenzia Digitale Completa</span>
+      <h1>Trasformiamo la tua presenza digitale in <em>clienti reali</em></h1>
+      <p class="hero__sub">Social Media, Video, Grafica, Copywriting, Siti Web e Chat Bot. Tutti i servizi digitali che servono al tuo business, in un unico partner. Risultati misurabili per PMI che vogliono crescere online.</p>
+      <a href="#contatto" class="cta">
+        Prenota Consulenza Gratuita
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      </a>
+      <div class="hero__proof">
+        <div class="hero__avatars">
+          <span>M</span><span>L</span><span>A</span><span>R</span>
+        </div>
+        <p class="hero__proof-text"><strong>100+ PMI</strong> si affidano a noi per la loro presenza digitale</p>
+      </div>
+    </div>
+    <div class="hero__image fade-up" style="--i:1">
+      <img src="assets/images/hero-screenshot.jpg" alt="Dashboard digitale ECF-MEDIA - Risultati e analytics" loading="eager" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%)';">
+      <div class="hero__badge">
+        <div class="hero__badge-icon">📈</div>
+        <div class="hero__badge-text">
+          <strong>+250%</strong>
+          lead digitali in media
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== 2. PROBLEMA ======================== -->
+<section class="problem fade-up">
+  <div class="container">
+    <span class="label">Il problema</span>
+    <h2>La tua presenza digitale è frammentata e non porta risultati</h2>
+    <p>Le piccole e medie imprese spesso investono in digitale senza una strategia chiara. Riconosci qualcuna di queste situazioni?</p>
+    <ul class="problem__list stagger">
+      <li style="--i:0">Hai social, sito web e materiali creati da professionisti diversi senza coordinamento</li>
+      <li style="--i:1">Investi in pubblicità ma non sai se funziona o quanto ti costa ogni cliente acquisito</li>
+      <li style="--i:2">I competitor sono più visibili online e ti rubano clienti potenziali</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ======================== 3. SOLUZIONE ======================== -->
+<section class="solution fade-up">
+  <div class="container">
+    <div>
+      <span class="label">La soluzione</span>
+      <h2>Un partner digitale unico per tutti i tuoi servizi</h2>
+      <p>Non ti servono 5 fornitori diversi. Con ECF-MEDIA hai tutto in un unico team: strategia unificata, risparmio di tempo e denaro, risultati misurabili.</p>
+      <ul class="solution__checks">
+        <li>Strategia digitale integrata per tutti i tuoi canali</li>
+        <li>Un unico punto di contatto invece di gestire più fornitori</li>
+        <li>Risultati misurabili con report chiari ogni mese</li>
+      </ul>
+    </div>
+    <div class="solution__visual">
+      <div class="solution__stat">
+        <span class="solution__stat-number">4×</span>
+        <span class="solution__stat-label">ROI medio rispetto a gestione interna o fornitori separati</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== PORTFOLIO / CASI STUDIO ======================== -->
+<section class="portfolio fade-up" id="portfolio">
+  <div class="container">
+    <span class="label">I nostri risultati</span>
+    <h2>Progetti che hanno portato risultati reali</h2>
+    <p>Ogni progetto è un caso studio di crescita digitale per PMI.</p>
+    <div class="portfolio__grid stagger fade-up">
+      <a href="https://pizzeria-two-dun.vercel.app" target="_blank" rel="noopener noreferrer" class="portfolio__card" style="--i:0; text-decoration: none; display: block;">
+        <div class="portfolio__image">
+          <img src="assets/images/pizzeria-hero.png" alt="La Pizzeria - Sito Web ECF-MEDIA" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="portfolio__content">
+          <h3>La Pizzeria</h3>
+          <p class="portfolio__service">Sito Web Completo</p>
+          <div class="portfolio__results">
+            <div class="portfolio__stat">
+              <strong>+320%</strong>
+              <span>prenotazioni online</span>
+            </div>
+            <div class="portfolio__stat">
+              <strong>+850</strong>
+              <span>nuovi follower</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="https://dentist-portfolio-ecf.vercel.app" target="_blank" rel="noopener noreferrer" class="portfolio__card" style="--i:1; text-decoration: none; display: block;">
+        <div class="portfolio__image">
+          <img src="assets/images/dentista-hero.png" alt="Studio Dentistico - Sito Web ECF-MEDIA" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="portfolio__content">
+          <h3>Studio Dentistico</h3>
+          <p class="portfolio__service">Sito Web + Design Professionale</p>
+          <div class="portfolio__results">
+            <div class="portfolio__stat">
+              <strong>+180%</strong>
+              <span>prenotazioni online</span>
+            </div>
+            <div class="portfolio__stat">
+              <strong>45%</strong>
+              <span>conversione form</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div class="portfolio__card" style="--i:2">
+        <div class="portfolio__image">
+          <img src="assets/images/portfolio-3.png" alt="Progetto Negozio di Abbigliamento - Risultati ECF-MEDIA" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="portfolio__content">
+          <h3>Negozio di Abbigliamento</h3>
+          <p class="portfolio__service">Social Media + Video + Grafica</p>
+          <div class="portfolio__results">
+            <div class="portfolio__stat">
+              <strong>+250%</strong>
+              <span>vendite online</span>
+            </div>
+            <div class="portfolio__stat">
+              <strong>12K</strong>
+              <span>visualizzazioni video</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 2.5rem;">
+      <a href="#contatto" class="cta">
+        Ottieni anche tu questi risultati
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== 4. SOCIAL PROOF ======================== -->
+<section class="proof fade-up">
+  <div class="container">
+    <span class="label">Cosa dicono i clienti</span>
+    <h2>Risultati reali, non promesse</h2>
+    <div class="proof__grid stagger">
+      <div class="proof__card" style="--i:0">
+        <div class="proof__stars">★★★★★</div>
+        <p class="proof__quote">"ECF-MEDIA ha trasformato completamente la nostra presenza online. In 3 mesi abbiamo triplicato le prenotazioni grazie a social media e sito web coordinati. Finalmente un partner che capisce il nostro business."</p>
+        <div class="proof__author">
+          <div class="proof__avatar" style="background:#6366f1">MR</div>
+          <div><span class="proof__name">Marco R.</span><br><span class="proof__role">Titolare, Ristorante Locale</span></div>
+        </div>
+      </div>
+      <div class="proof__card" style="--i:1">
+        <div class="proof__stars">★★★★★</div>
+        <p class="proof__quote">"Prima gestivamo social, sito e grafica con persone diverse. Con ECF-MEDIA tutto è coordinato e funziona meglio. Il chat bot sul sito ci ha portato il 40% dei nuovi contatti. Investimento recuperato in 2 mesi."</p>
+        <div class="proof__author">
+          <div class="proof__avatar" style="background:#f59e0b">LB</div>
+          <div><span class="proof__name">Laura B.</span><br><span class="proof__role">Titolare, Studio Professionale</span></div>
+        </div>
+      </div>
+      <div class="proof__card" style="--i:2">
+        <div class="proof__stars">★★★★★</div>
+        <p class="proof__quote">"I video che hanno creato per noi hanno fatto esplodere le visualizzazioni sui social. E il nuovo sito web converte molto meglio del precedente. Team professionale e sempre disponibile."</p>
+        <div class="proof__author">
+          <div class="proof__avatar" style="background:#10b981">AG</div>
+          <div><span class="proof__name">Andrea G.</span><br><span class="proof__role">Titolare, Negozio di Abbigliamento</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== 5. SERVIZI ======================== -->
+<section class="features" id="servizi">
+  <div class="container">
+    <span class="label">I nostri servizi</span>
+    <h2>Tutto quello che serve per crescere online</h2>
+    <p>Dalla strategia all'esecuzione, copriamo ogni aspetto della tua presenza digitale.</p>
+    <div class="features__grid stagger fade-up">
+      <div class="features__card" style="--i:0">
+        <div class="features__icon" style="background:#e6f7ff">📱</div>
+        <h3>Gestione Social Media</h3>
+        <p>Strategia, contenuti, community management e advertising su Instagram, Facebook, LinkedIn. Crescita organica e a pagamento.</p>
+      </div>
+      <div class="features__card" style="--i:1">
+        <div class="features__icon" style="background:#e6f7ff">🎬</div>
+        <h3>Produzione Video</h3>
+        <p>Video promozionali, contenuti per social, video corporate e montaggio professionale. Dallo script al prodotto finale.</p>
+      </div>
+      <div class="features__card" style="--i:2">
+        <div class="features__icon" style="background:#e6f7ff">🎨</div>
+        <h3>Grafica Professionale</h3>
+        <p>Logo, brand identity, materiali marketing, social graphics. Design coerente che rafforza la tua immagine.</p>
+      </div>
+      <div class="features__card" style="--i:3">
+        <div class="features__icon" style="background:#e6f7ff">✍️</div>
+        <h3>Copywriting che Vende</h3>
+        <p>Testi per web, social, email marketing e landing pages. Copywriting orientato alla conversione, non solo belle parole.</p>
+      </div>
+      <div class="features__card" style="--i:4">
+        <div class="features__icon" style="background:#e6f7ff">🌐</div>
+        <h3>Siti Web che Convertono</h3>
+        <p>Design responsive, SEO, velocità e ottimizzazione conversioni. Siti che portano clienti, non solo visite.</p>
+      </div>
+      <div class="features__card" style="--i:5">
+        <div class="features__icon" style="background:#e6f7ff">💬</div>
+        <h3>Chat Bot Intelligenti</h3>
+        <p>Assistenza 24/7, lead generation e supporto clienti automatizzato. Chat bot su sito web e WhatsApp per non perdere nessun contatto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== 6. PROCESSO ======================== -->
+<section class="process" id="processo">
+  <div class="container">
+    <span class="label">Come funziona</span>
+    <h2>Il nostro processo in 3 step semplici</h2>
+    <div class="process__steps fade-up stagger">
+      <div class="process__step" style="--i:0">
+        <div class="process__number">1</div>
+        <h3>Consulenza Strategica</h3>
+        <p>Analizziamo i tuoi obiettivi, competitor e situazione attuale. Capiamo cosa serve davvero al tuo business per crescere online.</p>
+      </div>
+      <div class="process__step" style="--i:1">
+        <div class="process__number">2</div>
+        <h3>Proposta Personalizzata</h3>
+        <p>Ti presentiamo un pacchetto su misura con servizi, tempi e investimento. Niente pacchetti standard, solo quello che ti serve.</p>
+      </div>
+      <div class="process__step" style="--i:2">
+        <div class="process__number">3</div>
+        <h3>Esecuzione & Monitoraggio</h3>
+        <p>Realizziamo tutto e monitoriamo i risultati. Report mensili chiari su cosa funziona e cosa migliorare.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FORM CONTATTO ======================== -->
+<section class="contact-form fade-up" id="contatto-form">
+  <div class="container">
+    <span class="label">Contattaci</span>
+    <h2>Prenota la tua consulenza gratuita</h2>
+    <p>Compila il form e ti contatteremo entro 24 ore per capire come possiamo aiutarti.</p>
+    <form class="contact-form__form" id="contactForm" style="max-width: 600px; margin: 2.5rem auto 0;">
+      <div class="contact-form__field">
+        <label for="name">Nome e Cognome *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="contact-form__field">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="contact-form__field">
+        <label for="phone">Telefono</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="contact-form__field">
+        <label for="service">Servizio di interesse *</label>
+        <select id="service" name="service" required>
+          <option value="">Seleziona un servizio</option>
+          <option value="social">Social Media Management</option>
+          <option value="video">Video Production</option>
+          <option value="grafica">Grafica & Design</option>
+          <option value="copywriting">Copywriting</option>
+          <option value="sito">Sito Web</option>
+          <option value="chatbot">Chat Bot</option>
+          <option value="pacchetto">Pacchetto Completo</option>
+        </select>
+      </div>
+      <div class="contact-form__field">
+        <label for="message">Messaggio</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      <div class="contact-form__field">
+        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal; cursor: pointer;">
+          <input type="checkbox" required>
+          <span>Accetto la <a href="#" style="color: var(--accent);">privacy policy</a> e il trattamento dei dati *</span>
+        </label>
+      </div>
+      <button type="submit" class="cta" style="width:100%;justify-content:center;">
+        Invia Richiesta
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ======================== 7. PRICING / CTA ======================== -->
+<section class="pricing" id="contatto">
+  <div class="container fade-up">
+    <span class="label">I nostri pacchetti</span>
+    <h2>Scegli il pacchetto giusto per il tuo business</h2>
+    <p>Personalizziamo ogni pacchetto alle tue esigenze. Nessun costo nascosto, tutto chiaro fin dall'inizio.</p>
+    <div class="pricing__grid stagger">
+      <div class="pricing__box" style="--i:0">
+        <h3 class="pricing__name">Base</h3>
+        <div class="pricing__price">€300-600<span class="pricing__period">una tantum</span></div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Perfetto per iniziare</p>
+        <ul class="pricing__includes">
+          <li>Sito template personalizzato</li>
+          <li>5-10 pagine</li>
+          <li>SEO base</li>
+          <li>Form contatti</li>
+          <li>Integrazione Google Maps/Calendar</li>
+        </ul>
+        <a href="#contatto" class="cta cta--outline" style="width:100%;justify-content:center;margin-top:2rem;">
+          Scegli Base
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+      <div class="pricing__box featured" style="--i:1">
+        <span class="pricing__popular">Più richiesto</span>
+        <h3 class="pricing__name">Medio</h3>
+        <div class="pricing__price">€800-1.500<span class="pricing__period">una tantum</span></div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Il più completo</p>
+        <ul class="pricing__includes">
+          <li>Tutto Base +</li>
+          <li>Custom design</li>
+          <li>Content AI-optimizzato</li>
+          <li>Gestione recensioni</li>
+          <li>Newsletter</li>
+          <li>Analytics setup</li>
+        </ul>
+        <a href="#contatto" class="cta" style="width:100%;justify-content:center;margin-top:2rem;">
+          Scegli Medio
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+      <div class="pricing__box" style="--i:2">
+        <h3 class="pricing__name">Premium</h3>
+        <div class="pricing__price">€2.000+<span class="pricing__period">una tantum</span></div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Massima crescita</p>
+        <ul class="pricing__includes">
+          <li>Tutto Medio +</li>
+          <li>Design custom completo</li>
+          <li>Chatbot AI</li>
+          <li>Funnel di vendita</li>
+          <li>CRM integrato</li>
+        </ul>
+        <a href="#contatto" class="cta cta--outline" style="width:100%;justify-content:center;margin-top:2rem;">
+          Scegli Premium
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+    </div>
+    <p style="margin-top:2.5rem;font-size:0.9rem;color:var(--text-muted);">Tutti i pacchetti includono consulenza iniziale gratuita. Personalizziamo ogni proposta alle tue esigenze.</p>
+  </div>
+</section>
+
+<!-- ======================== 8. FAQ ======================== -->
+<section class="faq" id="faq">
+  <div class="container fade-up">
+    <span class="label">Domande frequenti</span>
+    <h2>Hai dubbi? Normale.</h2>
+
+    <div class="faq__item">
+      <button class="faq__question">Quanto tempo serve per vedere risultati?</button>
+      <div class="faq__answer"><p>Dipende dal servizio. Per social media e sito web, i primi risultati si vedono in 30-60 giorni. Per SEO e crescita organica, servono 3-6 mesi. Ti forniamo report mensili per monitorare i progressi.</p></div>
+    </div>
+    <div class="faq__item">
+      <button class="faq__question">Posso scegliere solo alcuni servizi?</button>
+      <div class="faq__answer"><p>Sì, assolutamente. I pacchetti sono indicativi. Possiamo creare una proposta personalizzata con solo i servizi che ti servono. La consulenza iniziale è gratuita per capire insieme cosa è meglio per te.</p></div>
+    </div>
+    <div class="faq__item">
+      <button class="faq__question">Fornite report mensili?</button>
+      <div class="faq__answer"><p>Sì, tutti i pacchetti includono report mensili chiari con metriche chiave: visite, contatti, conversioni, crescita follower, engagement. Ti spieghiamo cosa funziona e cosa migliorare.</p></div>
+    </div>
+    <div class="faq__item">
+      <button class="faq__question">Gestite anche la pubblicità a pagamento?</button>
+      <div class="faq__answer"><p>Sì, nei pacchetti Pro e Premium è inclusa la gestione di campagne pubblicitarie su social media. Ottimizziamo budget e targeting per massimizzare il ROI. Il budget pubblicitario è a parte.</p></div>
+    </div>
+    <div class="faq__item">
+      <button class="faq__question">Il chat bot funziona anche su WhatsApp?</button>
+      <div class="faq__answer"><p>Sì, il chat bot può essere integrato sia sul sito web che su WhatsApp Business. Gestisce risposte automatiche, raccoglie lead e può essere configurato per le tue esigenze specifiche.</p></div>
+    </div>
+    <div class="faq__item">
+      <button class="faq__question">Cosa succede dopo il lancio del sito?</button>
+      <div class="faq__answer"><p>Il sito è tuo e puoi gestirlo autonomamente. Nei pacchetti Pro e Premium includiamo aggiornamenti e supporto continuo. Possiamo anche formare il tuo team per gestire contenuti base.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== 9. FOOTER CTA ======================== -->
+<section class="final-cta">
+  <div class="container fade-up">
+    <h2>Pronto a trasformare il tuo sito in una macchina per clienti?</h2>
+    <p>La consulenza è gratuita e senza impegno. Il peggio che può succedere è che ottieni consigli utili gratis.</p>
+    <a href="#contatto" class="cta">
+      Prenota Ora — È Gratis
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__section">
+      <h4>ECF-MEDIA</h4>
+      <p class="footer__contact">Agenzia digitale completa per piccole e medie imprese. Trasformiamo la tua presenza digitale in clienti reali.</p>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/ecfmedia" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
+        <a href="https://www.facebook.com/ecfmedia" target="_blank" rel="noopener noreferrer" aria-label="Facebook">👥</a>
+        <a href="https://www.linkedin.com/company/ecfmedia" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼</a>
+      </div>
+    </div>
+    <div class="footer__section">
+      <h4>Servizi</h4>
+      <ul class="footer__links">
+        <li><a href="#servizi">Social Media</a></li>
+        <li><a href="#servizi">Video Production</a></li>
+        <li><a href="#servizi">Grafica</a></li>
+        <li><a href="#servizi">Copywriting</a></li>
+        <li><a href="#servizi">Siti Web</a></li>
+        <li><a href="#servizi">Chat Bot</a></li>
+      </ul>
+    </div>
+    <div class="footer__section">
+      <h4>Azienda</h4>
+      <ul class="footer__links">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#processo">Come Funziona</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contatto">Contatti</a></li>
+      </ul>
+    </div>
+    <div class="footer__section">
+      <h4>Contatti</h4>
+      <div class="footer__contact">
+        <p>Email: <a href="mailto:info@ecfmedia.it">info@ecfmedia.it</a></p>
+        <p>Tel: <a href="tel:+393664400722">+39 366 440 0722</a></p>
+        <p style="margin-top: 1rem;">Lun-Ven: 9:00 - 18:00</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2025 ECF-MEDIA — Tutti i diritti riservati</p>
+  </div>
+</footer>
+
+<!-- ======================== JAVASCRIPT ======================== -->
+<script>
+// Navbar scroll effect
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Mobile menu toggle
+const toggle = document.getElementById('navToggle');
+const links = document.getElementById('navLinks');
+toggle.addEventListener('click', () => links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+// FAQ accordion
+document.querySelectorAll('.faq__question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const wasActive = item.classList.contains('active');
+    document.querySelectorAll('.faq__item').forEach(i => i.classList.remove('active'));
+    if (!wasActive) item.classList.add('active');
+  });
+});
+
+// Scroll reveal animations
+const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      // Stagger children
+      if (entry.target.classList.contains('stagger')) {
+        entry.target.querySelectorAll(':scope > *').forEach((child, i) => {
+          child.style.setProperty('--i', i);
+        });
+      }
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Smooth scroll for all anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+// Contact form handling
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Qui puoi aggiungere la logica per inviare il form
+    // Esempio: fetch API, email service, etc.
+    alert('Grazie per la tua richiesta! Ti contatteremo entro 24 ore.');
+    contactForm.reset();
+  });
+}
+</script>
+
+</body>
+</html>
