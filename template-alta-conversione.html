@@ -3,7 +3,84 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Template Alta Conversione — Business Locale</title>
+<title>ECF-MEDIA | Agenzia Digitale Completa - Social, Video, Grafica, Copywriting, Siti Web, Chat Bot</title>
+<meta name="description" content="ECF-MEDIA: agenzia digitale completa per PMI. Servizi integrati: social media, video production, grafica, copywriting, siti web e chat bot. Trasformiamo la tua presenza digitale in clienti reali.">
+<meta name="keywords" content="agenzia digitale, social media, video production, grafica, copywriting, siti web, chat bot, marketing digitale, PMI">
+<meta property="og:title" content="ECF-MEDIA | Agenzia Digitale Completa">
+<meta property="og:description" content="Trasformiamo la tua presenza digitale in clienti reali. Servizi integrati per piccole e medie imprese.">
+<meta property="og:type" content="website">
+
+<!-- Schema.org markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ECF-MEDIA",
+  "description": "Agenzia digitale completa per piccole e medie imprese. Servizi integrati: social media, video production, grafica, copywriting, siti web e chat bot.",
+  "url": "https://www.ecf-media.it",
+  "telephone": "+39000000000",
+  "email": "info@ecf-media.it",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IT"
+  },
+  "priceRange": "€€",
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "sameAs": [
+    "https://www.instagram.com/ecfmedia",
+    "https://www.facebook.com/ecfmedia",
+    "https://www.linkedin.com/company/ecfmedia"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servizi Digitali",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Social Media Management"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Video Production"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Grafica Professionale"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Copywriting"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Siti Web"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Chat Bot"
+        }
+      }
+    ]
+  }
+}
+</script>
 
 <!-- FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -344,6 +421,8 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
 @media (max-width: 768px) {
   .hero .container { grid-template-columns: 1fr; gap: 2.5rem; }
   .hero__image { max-width: 400px; }
+  .pricing__grid { grid-template-columns: 1fr; }
+  .portfolio__grid { grid-template-columns: 1fr; }
 }
 
 /* ========================================
@@ -484,6 +563,91 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
 
 @media (max-width: 768px) {
   .solution .container { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+
+/* ========================================
+   PORTFOLIO / CASI STUDIO
+   ======================================== */
+.portfolio {
+  padding: var(--section-padding);
+  background: var(--white);
+}
+
+.portfolio .container { text-align: center; }
+.portfolio h2 { margin-bottom: 1rem; }
+.portfolio > .container > p { max-width: 600px; margin: 0 auto 3rem; }
+
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  text-align: left;
+}
+
+.portfolio__card {
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.portfolio__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  border-color: var(--accent);
+}
+
+.portfolio__image {
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio__content {
+  padding: 1.5rem;
+}
+
+.portfolio__content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.portfolio__service {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px rgba(0,191,255,0.3);
+}
+
+.portfolio__results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.portfolio__stat {
+  text-align: center;
+}
+
+.portfolio__stat strong {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--accent);
+  font-weight: 700;
+  text-shadow: 0 0 15px rgba(0,191,255,0.4);
+  margin-bottom: 0.25rem;
+}
+
+.portfolio__stat span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: block;
 }
 
 /* ========================================
@@ -668,6 +832,69 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
 }
 
 /* ========================================
+   FORM CONTATTO
+   ======================================== */
+.contact-form {
+  padding: var(--section-padding);
+  background: var(--warm);
+}
+
+.contact-form .container {
+  text-align: center;
+  max-width: 800px;
+}
+
+.contact-form h2 { margin-bottom: 1rem; }
+.contact-form > .container > p { margin-bottom: 2rem; }
+
+.contact-form__form {
+  text-align: left;
+}
+
+.contact-form__field {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form__field label {
+  display: block;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.contact-form__field input,
+.contact-form__field select,
+.contact-form__field textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: all 0.3s;
+  background: var(--white);
+}
+
+.contact-form__field input:focus,
+.contact-form__field select:focus,
+.contact-form__field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0,191,255,0.1);
+}
+
+.contact-form__field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form__field input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+/* ========================================
    7. PRICING / CTA
    ======================================== */
 .pricing {
@@ -676,22 +903,39 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
 
 .pricing .container {
   text-align: center;
-  max-width: 700px;
+  max-width: 1200px;
 }
 
 .pricing h2 { margin-bottom: 1rem; }
+.pricing > .container > p { max-width: 700px; margin: 0 auto 3rem; }
 
-.pricing__box {
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
   margin-top: 2.5rem;
-  background: var(--white);
-  border: 2px solid rgba(0,0,0,0.06);
-  border-radius: calc(var(--radius) * 1.5);
-  padding: 3rem;
-  position: relative;
-  overflow: hidden;
 }
 
-.pricing__box::before {
+.pricing__box {
+  background: var(--white);
+  border: 2px solid rgba(0,0,0,0.08);
+  border-radius: calc(var(--radius) * 1.5);
+  padding: 2.5rem;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.pricing__box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+}
+
+.pricing__box.featured {
+  border-color: var(--accent);
+  border-width: 3px;
+}
+
+.pricing__box.featured::before {
   content: '';
   position: absolute;
   top: 0;
@@ -716,21 +960,32 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
   box-shadow: 0 0 20px rgba(0,191,255,0.5);
 }
 
-.pricing__price {
+.pricing__name {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--text);
   margin-bottom: 0.5rem;
+}
+
+.pricing__price {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.pricing__period {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
 }
 
 .pricing__includes {
   list-style: none;
   margin: 2rem 0;
   text-align: left;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .pricing__includes li {
@@ -748,6 +1003,7 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
   color: var(--accent);
   font-weight: 700;
   text-shadow: 0 0 8px rgba(0,191,255,0.4);
+  flex-shrink: 0;
 }
 
 /* ========================================
@@ -854,13 +1110,101 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
 .footer {
   background: #4a4a4a;
   border-top: 1px solid rgba(255,255,255,0.08);
-  padding: 2rem clamp(1.25rem, 5vw, 3rem);
+  padding: 3rem clamp(1.25rem, 5vw, 3rem);
+}
+
+.footer__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer__section h4 {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+}
+
+.footer__links {
+  list-style: none;
+}
+
+.footer__links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer__links a {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footer__links a:hover {
+  color: var(--accent);
+}
+
+.footer__contact {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.footer__contact a {
+  color: rgba(255,255,255,0.6);
+  transition: color 0.3s;
+}
+
+.footer__contact a:hover {
+  color: var(--accent);
+}
+
+.footer__social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer__social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.6);
+  transition: all 0.3s;
+  font-size: 1.1rem;
+}
+
+.footer__social a:hover {
+  background: var(--accent);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,191,255,0.3);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 2rem;
   text-align: center;
 }
 
-.footer p {
+.footer__bottom p {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.35);
+}
+
+@media (max-width: 768px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
 
 /* ========================================
@@ -887,9 +1231,10 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
 <!-- ======================== NAVBAR ======================== -->
 <nav class="nav" id="nav">
   <div class="nav__inner">
-    <a href="#" class="nav__logo">ECF</a>
+    <a href="#" class="nav__logo">ECF-MEDIA</a>
     <ul class="nav__links" id="navLinks">
       <li><a href="#servizi">Servizi</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#processo">Come Funziona</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contatto" class="cta nav__cta">Prenota Gratis</a></li>
@@ -904,18 +1249,18 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
 <section class="hero">
   <div class="container">
     <div class="hero__content fade-up">
-      <span class="label">Web Design per [Tipo Business]</span>
-      <h1>Il tuo business merita un sito che <em>converte visitatori in clienti</em></h1>
-      <p class="hero__sub">Creiamo siti web professionali per [tipo business] che portano risultati reali — più chiamate, più prenotazioni, più clienti.</p>
+      <span class="label">Agenzia Digitale Completa</span>
+      <h1>Trasformiamo la tua presenza digitale in <em>clienti reali</em></h1>
+      <p class="hero__sub">Social Media, Video, Grafica, Copywriting, Siti Web e Chat Bot. Tutti i servizi digitali che servono al tuo business, in un unico partner. Risultati misurabili per PMI che vogliono crescere online.</p>
       <a href="#contatto" class="cta">
-        Prenota una Consulenza Gratuita
+        Prenota Consulenza Gratuita
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
       </a>
       <div class="hero__proof">
         <div class="hero__avatars">
           <span>M</span><span>L</span><span>A</span><span>R</span>
         </div>
-        <p class="hero__proof-text"><strong>50+ professionisti</strong> si fidano già di noi</p>
+        <p class="hero__proof-text"><strong>100+ PMI</strong> si affidano a noi per la loro presenza digitale</p>
       </div>
     </div>
     <div class="hero__image fade-up" style="--i:1">
@@ -926,8 +1271,8 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
       <div class="hero__badge">
         <div class="hero__badge-icon">📈</div>
         <div class="hero__badge-text">
-          <strong>+180%</strong>
-          richieste in 90 giorni
+          <strong>+250%</strong>
+          lead digitali in media
         </div>
       </div>
     </div>
@@ -938,13 +1283,13 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
 <section class="problem fade-up">
   <div class="container">
     <span class="label">Il problema</span>
-    <h2>Stai perdendo clienti ogni giorno senza saperlo</h2>
-    <p>La maggior parte dei [tipo business] ha un sito che non lavora per loro. Riconosci qualcuna di queste situazioni?</p>
+    <h2>La tua presenza digitale è frammentata e non porta risultati</h2>
+    <p>Le piccole e medie imprese spesso investono in digitale senza una strategia chiara. Riconosci qualcuna di queste situazioni?</p>
     <ul class="problem__list stagger">
-      <li style="--i:0">Il tuo sito sembra fermo al 2015 e non ispira fiducia</li>
-      <li style="--i:1">I clienti ti trovano su Google ma non ti contattano</li>
-      <li style="--i:2">Non sai quante persone visitano il tuo sito (e quante se ne vanno)</li>
-      <li style="--i:3">La concorrenza ha un sito migliore e sta prendendo i tuoi clienti</li>
+      <li style="--i:0">Hai social, sito web e materiali creati da professionisti diversi senza coordinamento</li>
+      <li style="--i:1">Investi in pubblicità ma non sai se funziona o quanto ti costa ogni cliente acquisito</li>
+      <li style="--i:2">I competitor sono più visibili online e ti rubano clienti potenziali</li>
+      <li style="--i:3">Non hai tempo per gestire tutto e delegare costa troppo o non funziona</li>
     </ul>
   </div>
 </section>
@@ -954,20 +1299,100 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
   <div class="container">
     <div>
       <span class="label">La soluzione</span>
-      <h2>Un sito costruito per portarti clienti, non solo per "esserci"</h2>
-      <p>Non creiamo siti vetrina. Creiamo strumenti di vendita che lavorano per te 24/7.</p>
+      <h2>Un partner digitale unico per tutti i tuoi servizi</h2>
+      <p>Non ti servono 5 fornitori diversi. Con ECF-MEDIA hai tutto in un unico team: strategia unificata, risparmio di tempo e denaro, risultati misurabili.</p>
       <ul class="solution__checks">
-        <li>Design professionale che costruisce fiducia istantanea</li>
-        <li>Ottimizzato per convertire visitatori in contatti</li>
-        <li>Veloce, mobile-first, ottimizzato SEO</li>
-        <li>Testi scritti per vendere, non per riempire spazio</li>
+        <li>Strategia digitale integrata per tutti i tuoi canali</li>
+        <li>Un unico punto di contatto invece di gestire più fornitori</li>
+        <li>Risultati misurabili con report chiari ogni mese</li>
+        <li>Team esperto che conosce il tuo business e i tuoi obiettivi</li>
       </ul>
     </div>
     <div class="solution__visual">
       <div class="solution__stat">
-        <span class="solution__stat-number">3.2×</span>
-        <span class="solution__stat-label">più contatti in media rispetto a un sito tradizionale</span>
+        <span class="solution__stat-number">4×</span>
+        <span class="solution__stat-label">ROI medio rispetto a gestione interna o fornitori separati</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== PORTFOLIO / CASI STUDIO ======================== -->
+<section class="portfolio fade-up" id="portfolio">
+  <div class="container">
+    <span class="label">I nostri risultati</span>
+    <h2>Progetti che hanno portato risultati reali</h2>
+    <p>Ogni progetto è un caso studio di crescita digitale per PMI.</p>
+    <div class="portfolio__grid stagger fade-up">
+      <div class="portfolio__card" style="--i:0">
+        <div class="portfolio__image" style="background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);">
+          <div style="padding: 2rem; text-align: center; color: var(--text-muted);">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🍕</div>
+            <small>Ristorante</small>
+          </div>
+        </div>
+        <div class="portfolio__content">
+          <h3>Ristorante Locale</h3>
+          <p class="portfolio__service">Social Media + Sito Web</p>
+          <div class="portfolio__results">
+            <div class="portfolio__stat">
+              <strong>+320%</strong>
+              <span>prenotazioni online</span>
+            </div>
+            <div class="portfolio__stat">
+              <strong>+850</strong>
+              <span>nuovi follower</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__card" style="--i:1">
+        <div class="portfolio__image" style="background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);">
+          <div style="padding: 2rem; text-align: center; color: var(--text-muted);">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">💼</div>
+            <small>Studio Professionale</small>
+          </div>
+        </div>
+        <div class="portfolio__content">
+          <h3>Studio Legale</h3>
+          <p class="portfolio__service">Sito Web + Copywriting + Chat Bot</p>
+          <div class="portfolio__results">
+            <div class="portfolio__stat">
+              <strong>+180%</strong>
+              <span>contatti mensili</span>
+            </div>
+            <div class="portfolio__stat">
+              <strong>45%</strong>
+              <span>conversione chat</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__card" style="--i:2">
+        <div class="portfolio__image" style="background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);">
+          <div style="padding: 2rem; text-align: center; color: var(--text-muted);">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏪</div>
+            <small>Negozio</small>
+          </div>
+        </div>
+        <div class="portfolio__content">
+          <h3>Negozio di Abbigliamento</h3>
+          <p class="portfolio__service">Social Media + Video + Grafica</p>
+          <div class="portfolio__results">
+            <div class="portfolio__stat">
+              <strong>+250%</strong>
+              <span>vendite online</span>
+            </div>
+            <div class="portfolio__stat">
+              <strong>12K</strong>
+              <span>visualizzazioni video</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 2.5rem;">
+      <a href="#contatto" class="cta cta--outline">Vedi tutti i progetti</a>
     </div>
   </div>
 </section>
@@ -980,26 +1405,26 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
     <div class="proof__grid stagger">
       <div class="proof__card" style="--i:0">
         <div class="proof__stars">★★★★★</div>
-        <p class="proof__quote">"Da quando abbiamo il nuovo sito, riceviamo il triplo delle richieste. Il miglior investimento che abbiamo fatto quest'anno."</p>
+        <p class="proof__quote">"ECF-MEDIA ha trasformato completamente la nostra presenza online. In 3 mesi abbiamo triplicato le prenotazioni grazie a social media e sito web coordinati. Finalmente un partner che capisce il nostro business."</p>
         <div class="proof__author">
           <div class="proof__avatar" style="background:#6366f1">MR</div>
-          <div><span class="proof__name">Marco R.</span><br><span class="proof__role">Titolare, Studio Dentistico Esempio</span></div>
+          <div><span class="proof__name">Marco R.</span><br><span class="proof__role">Titolare, Ristorante Locale</span></div>
         </div>
       </div>
       <div class="proof__card" style="--i:1">
         <div class="proof__stars">★★★★★</div>
-        <p class="proof__quote">"Finalmente un sito che rispecchia la qualità del nostro lavoro. I clienti ci dicono che ci hanno scelto proprio per come si presenta il sito."</p>
+        <p class="proof__quote">"Prima gestivamo social, sito e grafica con persone diverse. Con ECF-MEDIA tutto è coordinato e funziona meglio. Il chat bot sul sito ci ha portato il 40% dei nuovi contatti. Investimento recuperato in 2 mesi."</p>
         <div class="proof__author">
           <div class="proof__avatar" style="background:#f59e0b">LB</div>
-          <div><span class="proof__name">Laura B.</span><br><span class="proof__role">Titolare, Ristorante Esempio</span></div>
+          <div><span class="proof__name">Laura B.</span><br><span class="proof__role">Titolare, Studio Professionale</span></div>
         </div>
       </div>
       <div class="proof__card" style="--i:2">
         <div class="proof__stars">★★★★★</div>
-        <p class="proof__quote">"Professionalità, velocità, e soprattutto risultati. In 2 mesi ho recuperato l'investimento con i nuovi clienti."</p>
+        <p class="proof__quote">"I video che hanno creato per noi hanno fatto esplodere le visualizzazioni sui social. E il nuovo sito web converte molto meglio del precedente. Team professionale e sempre disponibile."</p>
         <div class="proof__author">
           <div class="proof__avatar" style="background:#10b981">AG</div>
-          <div><span class="proof__name">Andrea G.</span><br><span class="proof__role">Avvocato, Studio Legale Esempio</span></div>
+          <div><span class="proof__name">Andrea G.</span><br><span class="proof__role">Titolare, Negozio di Abbigliamento</span></div>
         </div>
       </div>
     </div>
@@ -1009,39 +1434,39 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
 <!-- ======================== 5. SERVIZI ======================== -->
 <section class="features" id="servizi">
   <div class="container">
-    <span class="label">Cosa include</span>
-    <h2>Tutto quello che serve. Niente di superfluo.</h2>
-    <p>Ogni sito è costruito con un obiettivo: portarti più clienti.</p>
+    <span class="label">I nostri servizi</span>
+    <h2>Tutto quello che serve per crescere online</h2>
+    <p>Dalla strategia all'esecuzione, copriamo ogni aspetto della tua presenza digitale.</p>
     <div class="features__grid stagger fade-up">
       <div class="features__card" style="--i:0">
-        <div class="features__icon" style="background:#ede9fe">🎨</div>
-        <h3>Design su Misura</h3>
-        <p>Nessun template generico. Design personalizzato per il tuo brand e il tuo pubblico.</p>
+        <div class="features__icon" style="background:#e6f7ff">📱</div>
+        <h3>Gestione Social Media</h3>
+        <p>Strategia, contenuti, community management e advertising su Instagram, Facebook, LinkedIn. Crescita organica e a pagamento.</p>
       </div>
       <div class="features__card" style="--i:1">
-        <div class="features__icon" style="background:#fef3c7">📱</div>
-        <h3>Mobile-First</h3>
-        <p>Il 70% dei tuoi clienti naviga da telefono. Il sito sarà perfetto su ogni schermo.</p>
+        <div class="features__icon" style="background:#e6f7ff">🎬</div>
+        <h3>Produzione Video</h3>
+        <p>Video promozionali, contenuti per social, video corporate e montaggio professionale. Dallo script al prodotto finale.</p>
       </div>
       <div class="features__card" style="--i:2">
-        <div class="features__icon" style="background:#ecfdf5">🔍</div>
-        <h3>SEO Ottimizzato</h3>
-        <p>Struttura pensata per farti trovare su Google dai clienti della tua zona.</p>
+        <div class="features__icon" style="background:#e6f7ff">🎨</div>
+        <h3>Grafica Professionale</h3>
+        <p>Logo, brand identity, materiali marketing, social graphics. Design coerente che rafforza la tua immagine.</p>
       </div>
       <div class="features__card" style="--i:3">
-        <div class="features__icon" style="background:#fde8ec">✍️</div>
-        <h3>Testi che Vendono</h3>
-        <p>Copywriting professionale incluso. Testi scritti per convincere, non per riempire.</p>
+        <div class="features__icon" style="background:#e6f7ff">✍️</div>
+        <h3>Copywriting che Vende</h3>
+        <p>Testi per web, social, email marketing e landing pages. Copywriting orientato alla conversione, non solo belle parole.</p>
       </div>
       <div class="features__card" style="--i:4">
-        <div class="features__icon" style="background:#e0f2fe">⚡</div>
-        <h3>Velocità Estrema</h3>
-        <p>Caricamento sotto i 2 secondi. I siti lenti perdono il 53% dei visitatori.</p>
+        <div class="features__icon" style="background:#e6f7ff">🌐</div>
+        <h3>Siti Web che Convertono</h3>
+        <p>Design responsive, SEO, velocità e ottimizzazione conversioni. Siti che portano clienti, non solo visite.</p>
       </div>
       <div class="features__card" style="--i:5">
-        <div class="features__icon" style="background:#f3e8ff">📊</div>
-        <h3>Analytics Incluse</h3>
-        <p>Saprai esattamente quante persone visitano il sito e quante ti contattano.</p>
+        <div class="features__icon" style="background:#e6f7ff">💬</div>
+        <h3>Chat Bot Intelligenti</h3>
+        <p>Assistenza 24/7, lead generation e supporto clienti automatizzato. Chat bot su sito web e WhatsApp per non perdere nessun contatto.</p>
       </div>
     </div>
   </div>
@@ -1051,52 +1476,140 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
 <section class="process" id="processo">
   <div class="container">
     <span class="label">Come funziona</span>
-    <h2>Da zero al tuo nuovo sito in 3 step</h2>
+    <h2>Il nostro processo in 3 step semplici</h2>
     <div class="process__steps fade-up stagger">
       <div class="process__step" style="--i:0">
         <div class="process__number">1</div>
-        <h3>Consulenza Gratuita</h3>
-        <p>15 minuti per capire i tuoi obiettivi e cosa serve davvero al tuo business.</p>
+        <h3>Consulenza Strategica</h3>
+        <p>Analizziamo i tuoi obiettivi, competitor e situazione attuale. Capiamo cosa serve davvero al tuo business per crescere online.</p>
       </div>
       <div class="process__step" style="--i:1">
         <div class="process__number">2</div>
-        <h3>Design & Sviluppo</h3>
-        <p>Creiamo il sito in 7–14 giorni. Vedi tutto prima di andare online.</p>
+        <h3>Proposta Personalizzata</h3>
+        <p>Ti presentiamo un pacchetto su misura con servizi, tempi e investimento. Niente pacchetti standard, solo quello che ti serve.</p>
       </div>
       <div class="process__step" style="--i:2">
         <div class="process__number">3</div>
-        <h3>Lancio & Risultati</h3>
-        <p>Il sito va online e inizia a lavorare per te. Supporto incluso per 30 giorni.</p>
+        <h3>Esecuzione & Monitoraggio</h3>
+        <p>Realizziamo tutto e monitoriamo i risultati. Report mensili chiari su cosa funziona e cosa migliorare.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ======================== FORM CONTATTO ======================== -->
+<section class="contact-form fade-up" id="contatto-form">
+  <div class="container">
+    <span class="label">Contattaci</span>
+    <h2>Prenota la tua consulenza gratuita</h2>
+    <p>Compila il form e ti contatteremo entro 24 ore per capire come possiamo aiutarti.</p>
+    <form class="contact-form__form" id="contactForm" style="max-width: 600px; margin: 2.5rem auto 0;">
+      <div class="contact-form__field">
+        <label for="name">Nome e Cognome *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="contact-form__field">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="contact-form__field">
+        <label for="phone">Telefono</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="contact-form__field">
+        <label for="service">Servizio di interesse *</label>
+        <select id="service" name="service" required>
+          <option value="">Seleziona un servizio</option>
+          <option value="social">Social Media Management</option>
+          <option value="video">Video Production</option>
+          <option value="grafica">Grafica & Design</option>
+          <option value="copywriting">Copywriting</option>
+          <option value="sito">Sito Web</option>
+          <option value="chatbot">Chat Bot</option>
+          <option value="pacchetto">Pacchetto Completo</option>
+        </select>
+      </div>
+      <div class="contact-form__field">
+        <label for="message">Messaggio</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      <div class="contact-form__field">
+        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal; cursor: pointer;">
+          <input type="checkbox" required>
+          <span>Accetto la <a href="#" style="color: var(--accent);">privacy policy</a> e il trattamento dei dati *</span>
+        </label>
+      </div>
+      <button type="submit" class="cta" style="width:100%;justify-content:center;">
+        Invia Richiesta
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      </button>
+    </form>
   </div>
 </section>
 
 <!-- ======================== 7. PRICING / CTA ======================== -->
 <section class="pricing" id="contatto">
   <div class="container fade-up">
-    <span class="label">Inizia ora</span>
-    <h2>Investi nel tuo business, non in un sito vetrina</h2>
-    <p>Un sito che ti porta clienti non è un costo. È l'investimento con il ROI più alto che puoi fare.</p>
-    <div class="pricing__box">
-      <span class="pricing__popular">Più richiesto</span>
-      <div class="pricing__price">€X.XXX</div>
-      <p style="color: var(--text-muted); font-size: 0.9rem;">Pagamento unico — nessun costo nascosto</p>
-      <ul class="pricing__includes">
-        <li>Design personalizzato su misura</li>
-        <li>Fino a X pagine ottimizzate</li>
-        <li>Copywriting professionale</li>
-        <li>SEO tecnico e locale</li>
-        <li>Mobile-first responsive</li>
-        <li>Analytics e tracking conversioni</li>
-        <li>30 giorni di supporto post-lancio</li>
-      </ul>
-      <a href="#" class="cta" style="width:100%;justify-content:center;">
-        Prenota la Consulenza Gratuita
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-      </a>
-      <p style="margin-top:1rem;font-size:0.8rem;color:var(--text-muted);">Nessun impegno — parliamo e vediamo se posso aiutarti</p>
+    <span class="label">I nostri pacchetti</span>
+    <h2>Scegli il pacchetto giusto per il tuo business</h2>
+    <p>Personalizziamo ogni pacchetto alle tue esigenze. Nessun costo nascosto, tutto chiaro fin dall'inizio.</p>
+    <div class="pricing__grid stagger">
+      <div class="pricing__box" style="--i:0">
+        <h3 class="pricing__name">Starter</h3>
+        <div class="pricing__price">€1.200<span class="pricing__period">/mese</span></div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Perfetto per iniziare</p>
+        <ul class="pricing__includes">
+          <li>Gestione Social Media (2 piattaforme)</li>
+          <li>12 post/mese + stories</li>
+          <li>Grafica base per social</li>
+          <li>Copywriting contenuti</li>
+          <li>Report mensile risultati</li>
+        </ul>
+        <a href="#contatto" class="cta cta--outline" style="width:100%;justify-content:center;margin-top:2rem;">
+          Scegli Starter
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+      <div class="pricing__box featured" style="--i:1">
+        <span class="pricing__popular">Più richiesto</span>
+        <h3 class="pricing__name">Pro</h3>
+        <div class="pricing__price">€2.500<span class="pricing__period">/mese</span></div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Il più completo</p>
+        <ul class="pricing__includes">
+          <li>Tutto Starter +</li>
+          <li>Sito Web responsive (fino a 5 pagine)</li>
+          <li>SEO base e ottimizzazione</li>
+          <li>Video production (2 video/mese)</li>
+          <li>Social Media Advertising</li>
+          <li>Email marketing</li>
+          <li>Report mensile dettagliato</li>
+        </ul>
+        <a href="#contatto" class="cta" style="width:100%;justify-content:center;margin-top:2rem;">
+          Scegli Pro
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+      <div class="pricing__box" style="--i:2">
+        <h3 class="pricing__name">Premium</h3>
+        <div class="pricing__price">€4.000<span class="pricing__period">/mese</span></div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Massima crescita</p>
+        <ul class="pricing__includes">
+          <li>Tutto Pro +</li>
+          <li>Chat Bot intelligente</li>
+          <li>Sito Web avanzato (illimitato)</li>
+          <li>Video production avanzata</li>
+          <li>Strategia digitale completa</li>
+          <li>Supporto prioritario</li>
+          <li>Consulenza mensile strategica</li>
+          <li>Analytics avanzati e ottimizzazioni</li>
+        </ul>
+        <a href="#contatto" class="cta cta--outline" style="width:100%;justify-content:center;margin-top:2rem;">
+          Scegli Premium
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
     </div>
+    <p style="margin-top:2.5rem;font-size:0.9rem;color:var(--text-muted);">Tutti i pacchetti includono consulenza iniziale gratuita. Personalizziamo ogni proposta alle tue esigenze.</p>
   </div>
 </section>
 
@@ -1107,24 +1620,28 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
     <h2>Hai dubbi? Normale.</h2>
 
     <div class="faq__item">
-      <button class="faq__question">Quanto tempo ci vuole?</button>
-      <div class="faq__answer"><p>In media 7–14 giorni lavorativi dalla consulenza iniziale al lancio. Dipende dalla complessità del progetto.</p></div>
+      <button class="faq__question">Quanto tempo serve per vedere risultati?</button>
+      <div class="faq__answer"><p>Dipende dal servizio. Per social media e sito web, i primi risultati si vedono in 30-60 giorni. Per SEO e crescita organica, servono 3-6 mesi. Ti forniamo report mensili per monitorare i progressi.</p></div>
     </div>
     <div class="faq__item">
-      <button class="faq__question">Devo fornire io i testi e le foto?</button>
-      <div class="faq__answer"><p>No. Il copywriting è incluso. Per le foto, possiamo usare immagini professionali o lavorare con il materiale che hai già.</p></div>
+      <button class="faq__question">Posso scegliere solo alcuni servizi?</button>
+      <div class="faq__answer"><p>Sì, assolutamente. I pacchetti sono indicativi. Possiamo creare una proposta personalizzata con solo i servizi che ti servono. La consulenza iniziale è gratuita per capire insieme cosa è meglio per te.</p></div>
     </div>
     <div class="faq__item">
-      <button class="faq__question">E se non mi piace il risultato?</button>
-      <div class="faq__answer"><p>Lavoriamo insieme step by step. Vedrai il progetto prima del lancio e faremo tutte le modifiche necessarie finché non sei soddisfatto al 100%.</p></div>
+      <button class="faq__question">Fornite report mensili?</button>
+      <div class="faq__answer"><p>Sì, tutti i pacchetti includono report mensili chiari con metriche chiave: visite, contatti, conversioni, crescita follower, engagement. Ti spieghiamo cosa funziona e cosa migliorare.</p></div>
     </div>
     <div class="faq__item">
-      <button class="faq__question">Posso aggiornare il sito da solo dopo?</button>
-      <div class="faq__answer"><p>Sì. Ti consegniamo un sito facile da gestire e ti mostriamo come fare le modifiche base. Per interventi più complessi, siamo sempre disponibili.</p></div>
+      <button class="faq__question">Gestite anche la pubblicità a pagamento?</button>
+      <div class="faq__answer"><p>Sì, nei pacchetti Pro e Premium è inclusa la gestione di campagne pubblicitarie su social media. Ottimizziamo budget e targeting per massimizzare il ROI. Il budget pubblicitario è a parte.</p></div>
     </div>
     <div class="faq__item">
-      <button class="faq__question">Ci sono costi aggiuntivi?</button>
-      <div class="faq__answer"><p>Il prezzo include tutto: design, sviluppo, copywriting, SEO base, e 30 giorni di supporto. L'unico costo extra è l'hosting (da €X/mese).</p></div>
+      <button class="faq__question">Il chat bot funziona anche su WhatsApp?</button>
+      <div class="faq__answer"><p>Sì, il chat bot può essere integrato sia sul sito web che su WhatsApp Business. Gestisce risposte automatiche, raccoglie lead e può essere configurato per le tue esigenze specifiche.</p></div>
+    </div>
+    <div class="faq__item">
+      <button class="faq__question">Cosa succede dopo il lancio del sito?</button>
+      <div class="faq__answer"><p>Il sito è tuo e puoi gestirlo autonomamente. Nei pacchetti Pro e Premium includiamo aggiornamenti e supporto continuo. Possiamo anche formare il tuo team per gestire contenuti base.</p></div>
     </div>
   </div>
 </section>
@@ -1143,7 +1660,48 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
 
 <!-- ======================== FOOTER ======================== -->
 <footer class="footer">
-  <p>© 2025 ECF — Tutti i diritti riservati</p>
+  <div class="footer__inner">
+    <div class="footer__section">
+      <h4>ECF-MEDIA</h4>
+      <p class="footer__contact">Agenzia digitale completa per piccole e medie imprese. Trasformiamo la tua presenza digitale in clienti reali.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">👥</a>
+        <a href="#" aria-label="LinkedIn">💼</a>
+      </div>
+    </div>
+    <div class="footer__section">
+      <h4>Servizi</h4>
+      <ul class="footer__links">
+        <li><a href="#servizi">Social Media</a></li>
+        <li><a href="#servizi">Video Production</a></li>
+        <li><a href="#servizi">Grafica</a></li>
+        <li><a href="#servizi">Copywriting</a></li>
+        <li><a href="#servizi">Siti Web</a></li>
+        <li><a href="#servizi">Chat Bot</a></li>
+      </ul>
+    </div>
+    <div class="footer__section">
+      <h4>Azienda</h4>
+      <ul class="footer__links">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#processo">Come Funziona</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contatto">Contatti</a></li>
+      </ul>
+    </div>
+    <div class="footer__section">
+      <h4>Contatti</h4>
+      <div class="footer__contact">
+        <p>Email: <a href="mailto:info@ecf-media.it">info@ecf-media.it</a></p>
+        <p>Tel: <a href="tel:+39000000000">+39 000 000 0000</a></p>
+        <p style="margin-top: 1rem;">Lun-Ven: 9:00 - 18:00</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2025 ECF-MEDIA — Tutti i diritti riservati</p>
+  </div>
 </footer>
 
 <!-- ======================== JAVASCRIPT ======================== -->
@@ -1196,6 +1754,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
+
+// Contact form handling
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Qui puoi aggiungere la logica per inviare il form
+    // Esempio: fetch API, email service, etc.
+    alert('Grazie per la tua richiesta! Ti contatteremo entro 24 ore.');
+    contactForm.reset();
+  });
+}
 </script>
 
 </body>
