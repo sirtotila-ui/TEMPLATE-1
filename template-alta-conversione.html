@@ -10,6 +10,13 @@
 <meta property="og:description" content="Trasformiamo la tua presenza digitale in clienti reali. Servizi integrati per piccole e medie imprese.">
 <meta property="og:type" content="website">
 
+<!-- Favicon -->
+<!-- Favicon files will be added when available -->
+<!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+<!-- <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"> -->
+<!-- <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
+<!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"> -->
+
 <!-- Schema.org markup -->
 <script type="application/ld+json">
 {
@@ -18,8 +25,8 @@
   "name": "ECF-MEDIA",
   "description": "Agenzia digitale completa per piccole e medie imprese. Servizi integrati: social media, video production, grafica, copywriting, siti web e chat bot.",
   "url": "https://www.ecf-media.it",
-  "telephone": "+39000000000",
-  "email": "info@ecf-media.it",
+  "telephone": "+39 366 440 0722",
+  "email": "info@ecfmedia.it",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "IT"
@@ -479,6 +486,7 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
   /* Process */
   .process__steps { grid-template-columns: 1fr; gap: 2.5rem; }
   .process__steps::before { display: none; }
+  .process__number { width: 60px; height: 60px; font-size: 1.3rem; }
   
   /* Pricing */
   .pricing__grid {
@@ -708,6 +716,8 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
   border: 1px solid rgba(0,0,0,0.08);
   overflow: hidden;
   transition: all 0.3s;
+  color: inherit;
+  cursor: pointer;
 }
 
 .portfolio__card:hover {
@@ -721,6 +731,8 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
 }
 
 .portfolio__content {
@@ -910,15 +922,17 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
   right: 15%;
   height: 2px;
   background: rgba(255,255,255,0.1);
+  z-index: 0;
 }
 
 .process__step { position: relative; z-index: 1; }
+.process__step .process__number { z-index: 2; }
 
 .process__number {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: rgba(0,191,255,0.15);
+  background: #4a4a4a;
   border: 2px solid var(--accent);
   display: flex;
   align-items: center;
@@ -929,6 +943,8 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
   font-weight: 700;
   color: var(--accent);
   box-shadow: 0 0 25px rgba(0,191,255,0.4), inset 0 0 15px rgba(0,191,255,0.2);
+  position: relative;
+  z-index: 2;
 }
 
 .process__step h3 {
@@ -1372,10 +1388,7 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
       </div>
     </div>
     <div class="hero__image fade-up" style="--i:1">
-      <div class="hero__image-placeholder">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-        <p>Screenshot del sito demo<br><small>(Inserire immagine qui)</small></p>
-      </div>
+      <img src="assets/images/hero-screenshot.jpg" alt="Dashboard digitale ECF-MEDIA - Risultati e analytics" loading="eager" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%)';">
       <div class="hero__badge">
         <div class="hero__badge-icon">📈</div>
         <div class="hero__badge-text">
@@ -1430,16 +1443,13 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
     <h2>Progetti che hanno portato risultati reali</h2>
     <p>Ogni progetto è un caso studio di crescita digitale per PMI.</p>
     <div class="portfolio__grid stagger fade-up">
-      <div class="portfolio__card" style="--i:0">
-        <div class="portfolio__image" style="background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);">
-          <div style="padding: 2rem; text-align: center; color: var(--text-muted);">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🍕</div>
-            <small>Ristorante</small>
-          </div>
+      <a href="https://pizzeria-two-dun.vercel.app" target="_blank" rel="noopener noreferrer" class="portfolio__card" style="--i:0; text-decoration: none; display: block;">
+        <div class="portfolio__image">
+          <img src="assets/images/pizzeria-hero.png" alt="La Pizzeria - Sito Web ECF-MEDIA" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="portfolio__content">
-          <h3>Ristorante Locale</h3>
-          <p class="portfolio__service">Social Media + Sito Web</p>
+          <h3>La Pizzeria</h3>
+          <p class="portfolio__service">Sito Web Completo</p>
           <div class="portfolio__results">
             <div class="portfolio__stat">
               <strong>+320%</strong>
@@ -1451,35 +1461,29 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
             </div>
           </div>
         </div>
-      </div>
-      <div class="portfolio__card" style="--i:1">
-        <div class="portfolio__image" style="background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);">
-          <div style="padding: 2rem; text-align: center; color: var(--text-muted);">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">💼</div>
-            <small>Studio Professionale</small>
-          </div>
+      </a>
+      <a href="https://dentist-portfolio-ecf.vercel.app" target="_blank" rel="noopener noreferrer" class="portfolio__card" style="--i:1; text-decoration: none; display: block;">
+        <div class="portfolio__image">
+          <img src="assets/images/dentista-hero.png" alt="Studio Dentistico - Sito Web ECF-MEDIA" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="portfolio__content">
-          <h3>Studio Legale</h3>
-          <p class="portfolio__service">Sito Web + Copywriting + Chat Bot</p>
+          <h3>Studio Dentistico</h3>
+          <p class="portfolio__service">Sito Web + Design Professionale</p>
           <div class="portfolio__results">
             <div class="portfolio__stat">
               <strong>+180%</strong>
-              <span>contatti mensili</span>
+              <span>prenotazioni online</span>
             </div>
             <div class="portfolio__stat">
               <strong>45%</strong>
-              <span>conversione chat</span>
+              <span>conversione form</span>
             </div>
           </div>
         </div>
-      </div>
+      </a>
       <div class="portfolio__card" style="--i:2">
-        <div class="portfolio__image" style="background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);">
-          <div style="padding: 2rem; text-align: center; color: var(--text-muted);">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏪</div>
-            <small>Negozio</small>
-          </div>
+        <div class="portfolio__image">
+          <img src="assets/images/portfolio-3.png" alt="Progetto Negozio di Abbigliamento - Risultati ECF-MEDIA" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="portfolio__content">
           <h3>Negozio di Abbigliamento</h3>
@@ -1664,53 +1668,49 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
     <p>Personalizziamo ogni pacchetto alle tue esigenze. Nessun costo nascosto, tutto chiaro fin dall'inizio.</p>
     <div class="pricing__grid stagger">
       <div class="pricing__box" style="--i:0">
-        <h3 class="pricing__name">Starter</h3>
-        <div class="pricing__price">€1.200<span class="pricing__period">/mese</span></div>
+        <h3 class="pricing__name">Base</h3>
+        <div class="pricing__price">€300-600<span class="pricing__period">una tantum</span></div>
         <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Perfetto per iniziare</p>
         <ul class="pricing__includes">
-          <li>Gestione Social Media (2 piattaforme)</li>
-          <li>12 post/mese + stories</li>
-          <li>Grafica base per social</li>
-          <li>Copywriting contenuti</li>
-          <li>Report mensile risultati</li>
+          <li>Sito template personalizzato</li>
+          <li>5-10 pagine</li>
+          <li>SEO base</li>
+          <li>Form contatti</li>
+          <li>Integrazione Google Maps/Calendar</li>
         </ul>
         <a href="#contatto" class="cta cta--outline" style="width:100%;justify-content:center;margin-top:2rem;">
-          Scegli Starter
+          Scegli Base
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
         </a>
       </div>
       <div class="pricing__box featured" style="--i:1">
         <span class="pricing__popular">Più richiesto</span>
-        <h3 class="pricing__name">Pro</h3>
-        <div class="pricing__price">€2.500<span class="pricing__period">/mese</span></div>
+        <h3 class="pricing__name">Medio</h3>
+        <div class="pricing__price">€800-1.500<span class="pricing__period">una tantum</span></div>
         <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Il più completo</p>
         <ul class="pricing__includes">
-          <li>Tutto Starter +</li>
-          <li>Sito Web responsive (fino a 5 pagine)</li>
-          <li>SEO base e ottimizzazione</li>
-          <li>Video production (2 video/mese)</li>
-          <li>Social Media Advertising</li>
-          <li>Email marketing</li>
-          <li>Report mensile dettagliato</li>
+          <li>Tutto Base +</li>
+          <li>Custom design</li>
+          <li>Content AI-optimizzato</li>
+          <li>Gestione recensioni</li>
+          <li>Newsletter</li>
+          <li>Analytics setup</li>
         </ul>
         <a href="#contatto" class="cta" style="width:100%;justify-content:center;margin-top:2rem;">
-          Scegli Pro
+          Scegli Medio
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
         </a>
       </div>
       <div class="pricing__box" style="--i:2">
         <h3 class="pricing__name">Premium</h3>
-        <div class="pricing__price">€4.000<span class="pricing__period">/mese</span></div>
+        <div class="pricing__price">€2.000+<span class="pricing__period">una tantum</span></div>
         <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Massima crescita</p>
         <ul class="pricing__includes">
-          <li>Tutto Pro +</li>
-          <li>Chat Bot intelligente</li>
-          <li>Sito Web avanzato (illimitato)</li>
-          <li>Video production avanzata</li>
-          <li>Strategia digitale completa</li>
-          <li>Supporto prioritario</li>
-          <li>Consulenza mensile strategica</li>
-          <li>Analytics avanzati e ottimizzazioni</li>
+          <li>Tutto Medio +</li>
+          <li>Design custom completo</li>
+          <li>Chatbot AI</li>
+          <li>Funnel di vendita</li>
+          <li>CRM integrato</li>
         </ul>
         <a href="#contatto" class="cta cta--outline" style="width:100%;justify-content:center;margin-top:2rem;">
           Scegli Premium
@@ -1760,7 +1760,7 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
   <div class="container fade-up">
     <h2>Pronto a trasformare il tuo sito in una macchina per clienti?</h2>
     <p>La consulenza è gratuita e senza impegno. Il peggio che può succedere è che ottieni consigli utili gratis.</p>
-    <a href="#" class="cta">
+    <a href="#contatto" class="cta">
       Prenota Ora — È Gratis
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
     </a>
@@ -1774,9 +1774,9 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
       <h4>ECF-MEDIA</h4>
       <p class="footer__contact">Agenzia digitale completa per piccole e medie imprese. Trasformiamo la tua presenza digitale in clienti reali.</p>
       <div class="footer__social">
-        <a href="#" aria-label="Instagram">📷</a>
-        <a href="#" aria-label="Facebook">👥</a>
-        <a href="#" aria-label="LinkedIn">💼</a>
+        <a href="https://www.instagram.com/ecfmedia" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
+        <a href="https://www.facebook.com/ecfmedia" target="_blank" rel="noopener noreferrer" aria-label="Facebook">👥</a>
+        <a href="https://www.linkedin.com/company/ecfmedia" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼</a>
       </div>
     </div>
     <div class="footer__section">
@@ -1802,8 +1802,8 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
     <div class="footer__section">
       <h4>Contatti</h4>
       <div class="footer__contact">
-        <p>Email: <a href="mailto:info@ecf-media.it">info@ecf-media.it</a></p>
-        <p>Tel: <a href="tel:+39000000000">+39 000 000 0000</a></p>
+        <p>Email: <a href="mailto:info@ecfmedia.it">info@ecfmedia.it</a></p>
+        <p>Tel: <a href="tel:+393664400722">+39 366 440 0722</a></p>
         <p style="margin-top: 1rem;">Lun-Ven: 9:00 - 18:00</p>
       </div>
     </div>
