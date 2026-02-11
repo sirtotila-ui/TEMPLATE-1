@@ -419,10 +419,131 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
 .hero__badge-text strong { display: block; font-size: 1rem; color: var(--text); }
 
 @media (max-width: 768px) {
+  /* Hero */
   .hero .container { grid-template-columns: 1fr; gap: 2.5rem; }
-  .hero__image { max-width: 400px; }
-  .pricing__grid { grid-template-columns: 1fr; }
-  .portfolio__grid { grid-template-columns: 1fr; }
+  .hero__image { max-width: 100%; margin: 0 auto; }
+  .hero__badge {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 1.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .hero__proof {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  /* Problem & Solution */
+  .problem__list {
+    max-width: 100%;
+  }
+  .problem__list li {
+    font-size: 0.95rem;
+  }
+  .solution .container { grid-template-columns: 1fr; gap: 2.5rem; }
+  .solution__visual {
+    padding: 2rem;
+  }
+  
+  /* Features */
+  .features__grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .features__card {
+    padding: 1.5rem;
+  }
+  
+  /* Portfolio */
+  .portfolio__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .portfolio__results {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  /* Proof */
+  .proof__grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .proof__card {
+    padding: 1.5rem;
+  }
+  
+  /* Process */
+  .process__steps { grid-template-columns: 1fr; gap: 2.5rem; }
+  .process__steps::before { display: none; }
+  
+  /* Pricing */
+  .pricing__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .pricing__box {
+    padding: 2rem;
+  }
+  
+  /* Contact Form */
+  .contact-form__form {
+    padding: 0;
+  }
+  .contact-form__field {
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Footer */
+  .footer__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  .footer__social {
+    justify-content: center;
+  }
+  
+  /* Typography adjustments */
+  h1 { font-size: clamp(1.8rem, 6vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 5vw, 2rem); }
+  h3 { font-size: clamp(1.1rem, 3vw, 1.3rem); }
+  
+  /* CTA buttons */
+  .cta {
+    padding: 0.875rem 1.75rem;
+    font-size: 0.95rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Section padding */
+  :root {
+    --section-padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem);
+  }
+  
+  /* Container max-width */
+  .container {
+    padding: 0 1rem;
+  }
+  
+  /* Labels */
+  .label {
+    font-size: 0.75rem;
+  }
+  
+  /* Portfolio stats */
+  .portfolio__stat strong {
+    font-size: 1.25rem;
+  }
+  
+  /* Solution stat */
+  .solution__stat-number {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+  }
 }
 
 /* ========================================
@@ -561,9 +682,6 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
   margin-top: 0.5rem;
 }
 
-@media (max-width: 768px) {
-  .solution .container { grid-template-columns: 1fr; gap: 2.5rem; }
-}
 
 /* ========================================
    PORTFOLIO / CASI STUDIO
@@ -826,10 +944,6 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  .process__steps { grid-template-columns: 1fr; gap: 2.5rem; }
-  .process__steps::before { display: none; }
-}
 
 /* ========================================
    FORM CONTATTO
@@ -1200,12 +1314,6 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
   color: rgba(255,255,255,0.35);
 }
 
-@media (max-width: 768px) {
-  .footer__inner {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
 
 /* ========================================
    ANIMATIONS
@@ -1289,7 +1397,6 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
       <li style="--i:0">Hai social, sito web e materiali creati da professionisti diversi senza coordinamento</li>
       <li style="--i:1">Investi in pubblicità ma non sai se funziona o quanto ti costa ogni cliente acquisito</li>
       <li style="--i:2">I competitor sono più visibili online e ti rubano clienti potenziali</li>
-      <li style="--i:3">Non hai tempo per gestire tutto e delegare costa troppo o non funziona</li>
     </ul>
   </div>
 </section>
@@ -1305,7 +1412,6 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
         <li>Strategia digitale integrata per tutti i tuoi canali</li>
         <li>Un unico punto di contatto invece di gestire più fornitori</li>
         <li>Risultati misurabili con report chiari ogni mese</li>
-        <li>Team esperto che conosce il tuo business e i tuoi obiettivi</li>
       </ul>
     </div>
     <div class="solution__visual">
@@ -1392,7 +1498,10 @@ p { color: var(--text-muted); font-size: clamp(1rem, 1.8vw, 1.125rem); }
       </div>
     </div>
     <div style="text-align: center; margin-top: 2.5rem;">
-      <a href="#contatto" class="cta cta--outline">Vedi tutti i progetti</a>
+      <a href="#contatto" class="cta">
+        Ottieni anche tu questi risultati
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      </a>
     </div>
   </div>
 </section>
